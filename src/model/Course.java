@@ -44,6 +44,14 @@ public class Course {
 		return sts;
 	}
 	
+	public Student searchStudent(int c) {
+		Student found = null;
+		if(root != null) {
+			found = root.search(c);
+		}
+		return found;
+	}
+	
 	public Student getRoot() {
 		return root;
 	}

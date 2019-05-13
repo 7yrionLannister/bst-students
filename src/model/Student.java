@@ -30,6 +30,16 @@ public class Student implements Comparable<Student> {
 		}
 	}
 	
+	public Student search(int c) {
+		if(c < code) {
+			return left!=null?left.search(c):null;
+		} else if(c > code){
+			return right!=null?right.search(c):null;
+		} else {
+			return this;
+		}
+	}
+	
 	public void inorder(ArrayList<Student> sts) {
 		if(left != null) {
 			left.inorder(sts);
