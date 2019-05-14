@@ -53,6 +53,12 @@ class CourseTest {
 		Student found = course.searchStudent(15);
 		assertNotNull("The student was added to the BST so the value must be different to null", found);
 		assertTrue("The student does not have the requested code", 15 == found.getCode());
+		
+		setupScenary2();
+		course.addStudent(21, "Khal Drogo");
+		found = course.searchStudent(21);
+		assertNotNull("The student was added to the BST so the value must be different to null", found);
+		assertTrue("The student does not have the requested code", 21 == found.getCode());
 	}
 
 }
