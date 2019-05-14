@@ -53,19 +53,19 @@ public class Student implements Comparable<Student> {
 	public void preorder(ArrayList<Student> sts) {
 		sts.add(this);
 		if(left != null) {
-			left.inorder(sts);
+			left.preorder(sts);
 		}
 		if(right != null) {
-			right.inorder(sts);
+			right.preorder(sts);
 		}
 	}
 	
 	public void postorder(ArrayList<Student> sts) {
 		if(left != null) {
-			left.inorder(sts);
+			left.postorder(sts);
 		}
 		if(right != null) {
-			right.inorder(sts);
+			right.postorder(sts);
 		}
 		sts.add(this);
 	}
