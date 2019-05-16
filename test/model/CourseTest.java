@@ -23,7 +23,7 @@ class CourseTest {
 		course.addStudent(2, "Juan");
 		course.addStudent(5, "Juana");
 		course.addStudent(4, "Valonqar");
-		course.addStudent(1, "Tyron Lannister");
+		course.addStudent(1, "Tyrion Lannister");
 		course.addStudent(7, "Jaime Lannister");
 		course.addStudent(6, "Cersei Lannister");
 		course.addStudent(8, "Jon Snow");
